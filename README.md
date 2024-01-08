@@ -1,58 +1,43 @@
-# Fandango Movie Ratings Analysis
+# Fandango's Movie Ratings Analysis
 
 ## Overview
+This project explores the discrepancy in movie ratings provided by Fandango compared to other review sites. The investigation aims to uncover potential biases in Fandango's ratings system and its implications on moviegoer decision-making.
 
-When deciding which movie to watch, online reviews and ratings play a crucial role. This project investigates the potential bias in Fandango's movie ratings in 2015 and explores the relationship between Fandango ratings and true user ratings. Additionally, it compares Fandango ratings to other movie review sites (Rotten Tomatoes, Metacritic, and IMDb) and examines the distribution of ratings across platforms.
+## Background
+The analysis was inspired by an article titled "Be Suspicious Of Online Movie Ratings, Especially Fandango’s" from [FiveThirtyEight](https://fivethirtyeight.com/features/fandango-movies-ratings/), highlighting concerns about Fandango's rating system favoring higher ratings.
 
-## Data Sources
+## Data Used
+- **Fandango Data:** Scraped data of Fandango stars and displayed ratings from `fandango_scrape.csv`.
+- **Other Movie Review Sites:** Aggregate data from Rotten Tomatoes, Metacritic, and IMDb obtained from `all_sites_scores.csv`.
 
-- **Fandango Data:** The analysis utilizes the `fandango_scrape.csv` file, containing Fandango stars and displayed ratings.
-- **Other Movie Review Sites Data:** The `all_sites_scores.csv` file provides aggregate data from other movie review sites, including Rotten Tomatoes, Metacritic, and IMDb.
+## Analysis Steps
+### 1. Understanding the Data
+- Loaded and examined the Fandango and other review sites' datasets.
+- Explored relationships between ratings and votes.
 
-## How to Use
+### 2. Fandango Displayed Scores vs. True User Ratings
+- Investigated discrepancies between Fandango's displayed stars and actual user ratings.
+- Analyzed the distribution of ratings across movies and identified potential biases.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/movie-ratings-analysis.git
-   cd movie-ratings-analysis
-   ```
-
-2. **Install Dependencies:**
-   Ensure you have the required libraries installed:
-   ```bash
-   pip install numpy pandas matplotlib seaborn
-   ```
-
-3. **Run the Jupyter Notebook:**
-   Open the Jupyter Notebook in your preferred environment:
-   ```bash
-   jupyter notebook Movie_Ratings_Analysis.ipynb
-   ```
-   Execute the cells step by step to reproduce the analysis.
+### 3. Comparison to Other Review Sites
+- Compared Fandango ratings to those from Rotten Tomatoes, Metacritic, and IMDb.
+- Visualized differences in ratings distributions across various platforms.
 
 ## Findings
+- Fandango's displayed ratings tended to be higher than true user ratings.
+- Observed discrepancies suggest a bias towards inflated ratings on Fandango.
+- Fandango ratings were notably higher than those on other review sites.
 
-### Part One: Understanding the Background and Data
-- Read the relevant article to understand the motivation behind the analysis.
-- Explored the Fandango dataset, including the distribution of ratings and the relationship between rating and voting.
+## Conclusion
+- Consumers should approach Fandango ratings with caution when making movie choices.
+- Further investigation is recommended to understand the reasons behind this bias.
 
-### Part Two: Exploring Fandango Displayed Scores versus True User Ratings
-- Investigated the potential bias by comparing displayed stars (`STARS`) with true user ratings (`RATING`).
-- Explored the distribution of ratings and identified movies with a significant difference between displayed stars and true user ratings.
-
-### Part Three: Comparison to Fandango Ratings to Other Sites
-- Loaded and explored data from other movie review sites (Rotten Tomatoes, Metacritic, IMDb).
-- Compared Fandango ratings with those from other platforms, highlighting potential biases.
-
-### Part Four: Summary and Conclusion
-- Summarized key findings, emphasizing the observed biases in Fandango's ratings.
-- Provided recommendations for users and suggested potential future steps for analysis.
-
-## Future Steps
-- Perform statistical tests to quantify observed biases.
+## Future Directions
+- Perform statistical tests to quantify the observed biases.
 - Investigate the impact of Fandango's high ratings on movie ticket sales.
-- Monitor recent data to see if Fandango has made any changes since 2015.
-- Explore user reviews and comments to understand the qualitative aspects of the bias.
-- Consider conducting sentiment analysis on user reviews for additional insights.
+- Monitor recent data for changes in Fandango's rating practices.
+- Explore user reviews and conduct sentiment analysis for deeper insights.
 
-Feel free to explore and contribute to the analysis! If you have any questions or suggestions, please open an issue or reach out to the project contributors.
+---
+
+Feel free to customize this README file further by adding details about the analysis process, code snippets, or additional findings you might have discovered during your investigation.
