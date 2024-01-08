@@ -1,4 +1,4 @@
-# Fandango's Movie Ratings Analysis
+# Movie Ratings Analysis
 
 ## Overview
 This project explores the discrepancy in movie ratings provided by Fandango compared to other review sites. The investigation aims to uncover potential biases in Fandango's ratings system and its implications on moviegoer decision-making.
